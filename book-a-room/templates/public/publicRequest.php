@@ -145,6 +145,7 @@
 							<input name="contactAddress2" type="text" id="contactAddress2" value="<?php echo $externals['contactAddress2']; ?>" size="64" maxlength="255"/>
 						</div>
 					</div>
+                    <?php /*
 					<!-- city information including drop down for social events -->
 					<div class="wideCol" id="cityFill">
 						<div class="question">
@@ -154,7 +155,7 @@
 							<input<?php if( !empty( $errorArr['classes'][ 'contactCity'] ) ) echo ' class="error"'; ?> name="contactCity" type="text" id="contactCity" value="<?php echo $externals['contactCity']; ?>" maxlength="255"/>
 						</div>
 					</div>
-
+                    
 					<div class="wideCol" id="cityDrop">
 						<div class="question">
 							<label for="contactCityDrop"><?php echo $city_name; ?></label>
@@ -178,7 +179,7 @@
 							</div>
 						</div>
 					</div>
-
+                    
 					<div class="wideCol">
 						<div class="question">
 							<label for="contactState"><?php echo $state_name; ?></label>
@@ -216,6 +217,7 @@
 							</div>
 						</div>
 					</div>
+                   
 					<div class="wideCol">
 						<div class="question">
 							<label for="contactZip"><?php echo $zip_name; ?></label>
@@ -224,6 +226,8 @@
 							<input<?php if( !empty( $errorArr['classes'][ 'contactZip'] ) ) echo ' class="error"'; ?> name="contactZip" type="text" id="contactZip" value="<?php echo $externals['contactZip']; ?>"/>
 						</div>
 					</div>
+
+                    */?>
 					<div class="wideCol">
 						<div class="question"><label for="contactEmail"><?php _e( 'Email Address', 'book-a-room' ); ?> *</label>
 						</div>
