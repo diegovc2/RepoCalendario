@@ -119,24 +119,26 @@
 							<input<?php if( !empty( $errorArr['classes'][ 'contactPhonePrimary'] ) ) echo ' class="error"'; ?> name="contactPhonePrimary" type="text" id="contactPhonePrimary" value="<?php echo $externals['contactPhonePrimary']; ?>"/>
 						</div>
 					</div>
-
-					<?php /*
-					<div class="wideCol">
+					<?php /* <div class="wideCol">
 						<div class="question"><label for="contactPhoneSecondary"><?php _e( 'Alternative phone', 'book-a-room' ); ?></label>
-						</div>
+						</div> 
 						<div class="formInput">
 							<input<?php if( !empty( $errorArr['classes'][ 'contactPhoneSecondary'] ) ) echo ' class="error"'; ?> name="contactPhoneSecondary" type="text" id="contactPhoneSecondary" value="<?php echo $externals['contactPhoneSecondary']; ?>"/>
 						</div>
-					</div>
+
+					</div> */ ?>
 					
-					*/?>
-					<div class="wideCol">
-						<div class="question"><label for="contactAddress1"><?php echo $address1_name; ?> *</label>
-						</div>
-						<div class="formInput">
-							<input<?php if( !empty( $errorArr['classes'][ 'contactAddress1'] ) ) echo ' class="error"'; ?> name="contactAddress1" type="text" id="contactAddress1" value="<?php echo $externals['contactAddress1']; ?>" size="64" maxlength="255"/>
-						</div>
-					</div>
+          <?php /*
+					  <div class="wideCol">
+						  <div class="question"><label for="contactAddress1"><?php echo $address1_name; ?> *</label>
+						  </div>
+						  <div class="formInput">
+							  <input<?php if( !empty( $errorArr['classes'][ 'contactAddress1'] ) ) echo ' class="error"'; ?> name="contactAddress1" type="text" id="contactAddress1" value="<?php echo $externals['contactAddress1']; ?>" size="64" maxlength="255"/>
+						  </div>
+					  </div>
+            */
+          ?>
+
 					<div class="wideCol">
 						<div class="question"><label for="contactAddress2"><?php echo $address2_name; ?></label></div>
 						<div class="formInput">
