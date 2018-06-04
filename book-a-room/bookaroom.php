@@ -469,6 +469,7 @@ class bookaroom_init
 		__( "This does not mean your request has been approved. We will notify you via email if your request has been accepted or denied.", 'book-a-room' ) . $lb . $lb . 
 		__( "If you are a nonprofit group, you will be required to send your 501(3)(c) documentation, otherwise, you will need to send your room fee to the following address, or stop into any branch.", 'book-a-room' ) . $lb . $lb . 
 		__( "The following payments are required:", 'book-a-room' ) . $lb . 
+		__( "PRUEBASASFASFASF", 'book-a-room') . $lb . 
 		__( 'Deposit', 'book-a-room' ) . " $ {deposit}" . $lb .  
 		__( 'Room Cost', 'book-a-room' ) . ": $ {roomPrice}" . $lb . 
 		__( 'Total', 'book-a-room' ) . ": $ {totalPrice}" . $lb . 
@@ -482,6 +483,8 @@ class bookaroom_init
 		'<strong>' . __( 'Event Name', 'book-a-room' ) . ":</strong> {eventName}" . $lb . 
 		'<strong>' . __( 'Number of attendees', 'book-a-room' ) . ":</strong> {numAttend}" . $lb . 
 		'<strong>' . __( 'Amenities', 'book-a-room' ) . ":</strong> {amenity}" . $lb . 
+
+
 		'<strong>' . __( 'Nonprofit', 'book-a-room' ) . ":</strong> {nonProfit}";
 
 		add_option( 'bookaroom_newAlert_body', 	$transAlert );
