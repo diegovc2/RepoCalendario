@@ -49,7 +49,7 @@ class bookaroom_public
 			case 'checkForm':
 				
 				if( ( $errorMSG = self::showForm_checkHoursError( $externals['startTime'], $externals['endTime'], $externals['roomID'], $roomContList, $branchList ) ) == TRUE ) {
-										echo "<a href='http://127.0.0.1/wordpress/invitaciones/'>Enviar Invitaciones</a>";
+										echo '<input type="button" onclick="location.href=\'http:\//127.0.0.1/wordpress/invitaciones/\';" value="Enviar Invitaciones" />';
 
 					return self::showForm_hoursError( $errorMSG, $externals );
 				} elseif( FALSE !== ( $errorArr = self::showForm_checkErrors( $externals, $branchList, $roomContList, $roomList, $amenityList, $cityList ) ) ) {	
@@ -57,7 +57,8 @@ class bookaroom_public
 				} else {
 					self::sendAlertEmail( $externals, $amenityList, $roomContList, $branchList );
 					self::showForm_insertNewRequest( $externals, NULL, $cityList );
-										echo "<a href='http://127.0.0.1/wordpress/invitaciones/'>Enviar Invitaciones</a>";
+					//echo "<button href='http://127.0.0.1/wordpress/invitaciones/'>Enviar Invitaciones</a>";
+					echo "<input type='button' onclick='location.href='http://127.0.0.1/wordpress/invitaciones/';' value='Enviar Invitaciones' />";
 
 					return self::sendCustomerReceiptEmail( $externals, $amenityList, $roomContList, $branchList );					
 				}
@@ -810,6 +811,8 @@ UNIX_TIMESTAMP( CONCAT_WS( '-', CAST( '{$dateInfo['year']}' AS CHAR ), LPAD( CAS
 				    'X-Mailer: PHP/' . phpversion();
 
 		mail( $externals['contactEmail'], $subject, $contents, $headers );
+												echo "<a href='http://127.0.0.1/wordpress/invitaciones/'>Enviar Invitaciones</a>";
+
 
 
 		return $contents;		
