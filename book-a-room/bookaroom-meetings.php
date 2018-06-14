@@ -200,6 +200,7 @@ class book_a_room_meetings
 
 				case 'approved':
 					$sendMail = TRUE;
+
 					break;
 
 				case 'denied':

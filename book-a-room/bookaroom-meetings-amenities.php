@@ -308,7 +308,8 @@ class bookaroom_settings_amenities {
 
 		$final = $wpdb->insert( $table_name,
 			array( 'amenityDesc' => $externals[ 'amenityDesc' ],
-				'amenity_isReservable' => $isReservable ) );
+				'amenity_isReservable' => $isReservable,
+				'amenity_cant' => $externals['amenity_cant'] ));
 
 
 	}

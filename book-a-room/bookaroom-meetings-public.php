@@ -58,7 +58,7 @@ class bookaroom_public
 					self::sendAlertEmail( $externals, $amenityList, $roomContList, $branchList );
 					self::showForm_insertNewRequest( $externals, NULL, $cityList );
 					//echo "<button href='http://127.0.0.1/wordpress/invitaciones/'>Enviar Invitaciones</a>";
-					echo "<input type='button' onclick='location.href='http://127.0.0.1/wordpress/invitaciones/';' value='Enviar Invitaciones' />";
+										echo '<input type="button" onclick="location.href=\'http:\//127.0.0.1/wordpress/invitaciones/\';" value="Enviar Invitaciones" />';
 
 					return self::sendCustomerReceiptEmail( $externals, $amenityList, $roomContList, $branchList );					
 				}
